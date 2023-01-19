@@ -23,11 +23,9 @@ export default function Home() {
   // balanceOfCryptoDevTokens keeps track of number of Crypto Dev tokens owned by an address
   const [balanceOfCryptoDevTokens, setBalanceOfCryptoDevTokens] =
     useState(zero);
-  // amount of the tokens that the user wants to mint
   const [tokenAmount, setTokenAmount] = useState(zero);
   // tokensMinted is the total number of tokens that have been minted till now out of 10000(max total supply)
   const [tokensMinted, setTokensMinted] = useState(zero);
-  // isOwner gets the owner of the contract through the signed address
   const [isOwner, setIsOwner] = useState(false);
   // Create a reference to the Web3 Modal (used for connecting to Metamask) which persists as long as the page is open
   const web3ModalRef = useRef();
